@@ -1,6 +1,6 @@
 {
   "name": "hubot-daily-count-tracker",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Gives hubot the abilty to count any item with ++ or --, and track the counted items on a daily basis",
   "main": "index.coffee",
   "scripts": {
