@@ -1,0 +1,35 @@
+{
+  "name": "hubot-daily-count-tracker",
+  "version": "0.1.0",
+  "description": "Gives hubot the abilty to count any item with ++ or --, and track the counted items on a daily basis",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parksjr/hubot-daily-count-tracker.git"
+  },
+  "keywords": [
+    "hubot",
+    "counter",
+    "tracking",
+    "data"
+  ],
+  "author": "Michael W. Parks Jr.",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/parksjr/hubot-daily-count-tracker/issues"
+  },
+  "homepage": "https://github.com/parksjr/hubot-daily-count-tracker#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coffee-script": "^1.10.0",
+    "hubot-test-helper": "^1.4.4",
+    "sinon": "^1.17.3",
+    "sinon-chai": "^2.8.0"
+  },
+  "dependencies": {
+    "moment": "^2.12.0"
+  }
+}
