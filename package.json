@@ -1,10 +1,16 @@
 {
   "name": "hubot-daily-count-tracker",
   "description": "A hubot script that does the things",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Mike Parks <parks.jr@gmail.com>",
   "license": "MIT",
-  "keywords": ["hubot", "count", "tracker", "counter", "history"],
+  "keywords": [
+    "hubot",
+    "count",
+    "tracker",
+    "counter",
+    "history"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/parksjr/hubot-daily-count-tracker.git"
