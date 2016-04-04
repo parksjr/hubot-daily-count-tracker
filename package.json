@@ -7,10 +7,10 @@
   "keywords": "hubot, count, tracker",
   "repository": {
     "type": "git",
-    "url": "git://github.com/parksjr/hubot-hubot-daily-count-tracker.git"
+    "url": "git://github.com/parksjr/hubot-daily-count-tracker.git"
   },
   "bugs": {
-    "url": "https://github.com/parksjr/hubot-hubot-daily-count-tracker/issues"
+    "url": "https://github.com/parksjr/hubot-daily-count-tracker/issues"
   },
   "dependencies": {
     "moment": "^2.12.0"
