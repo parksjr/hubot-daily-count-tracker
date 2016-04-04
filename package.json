@@ -1,7 +1,7 @@
 {
   "name": "hubot-daily-count-tracker",
   "description": "A hubot script that does the things",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Mike Parks <parks.jr@gmail.com>",
   "license": "MIT",
   "keywords": [
