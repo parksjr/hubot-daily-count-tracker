@@ -1,4 +1,4 @@
-# hubot-hubot-daily-count-tracker
+# hubot-daily-count-tracker
 
 A hubot script that does the things
 
