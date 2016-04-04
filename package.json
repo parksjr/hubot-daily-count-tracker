@@ -4,7 +4,7 @@
   "version": "1.0.2",
   "author": "Mike Parks <parks.jr@gmail.com>",
   "license": "MIT",
-  "keywords": "hubot, count, tracker",
+  "keywords": ["hubot", "count", "tracker", "counter", "history"],
   "repository": {
     "type": "git",
     "url": "git://github.com/parksjr/hubot-daily-count-tracker.git"

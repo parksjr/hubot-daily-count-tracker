@@ -8,19 +8,23 @@ See [`src/hubot-daily-count-tracker.coffee`](src/hubot-daily-count-tracker.coffe
 
 In hubot project repo, run:
 
-`npm install hubot-hubot-daily-count-tracker --save`
+`npm install hubot-daily-count-tracker --save`
 
-Then add **hubot-hubot-daily-count-tracker** to your `external-scripts.json`:
+Then add **hubot-daily-count-tracker** to your `external-scripts.json`:
 
 ```json
 [
-  "hubot-hubot-daily-count-tracker"
+  "hubot-daily-count-tracker"
 ]
 ```
 
 ## Sample Interaction
 
 ```
-user1>> hubot hello
-hubot>> hello!
+user1>> java++
+hubot>> java: 1
+```
+```
+user1>> hubot get todays count java
+hubot>> Today's count for java: 9
 ```
