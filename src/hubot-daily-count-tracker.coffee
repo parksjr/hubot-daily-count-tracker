@@ -18,7 +18,7 @@
 moment = require('moment')
 keyHelper = require('../helpers/daily-count-helper.coffee')
 module.exports = (robot) ->
-  robot.brain.on 'loaded', =>
+  robot.brain.on 'loaded', ->
     robot.brain.data.countTotal ||= {}
     robot.brain.data.countDailyTracker ||= {}
 
