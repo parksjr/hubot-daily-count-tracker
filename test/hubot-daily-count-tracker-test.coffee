@@ -2,6 +2,7 @@ Helper = require('hubot-test-helper')
 expect = require('chai').expect
 helper = new Helper('../src/hubot-daily-count-tracker.coffee')
 keyHelper = require('../helpers/daily-count-helper.coffee')
+moment = require('moment')
 key = 'java'
 
 describe 'hubot-daily-count-tracker-test', ->
@@ -11,6 +12,7 @@ describe 'hubot-daily-count-tracker-test', ->
     @room.robot.brain.data.countDailyTracker = {}
     @room.robot.brain.data.countDailyTracker[keyHelper.dailyScoreKey(key)] = 1
     @room.robot.brain.data.countDailyTracker[keyHelper.yesterdayScoreKey(key)] = 5
+    @yesterday = moment().add('-1', 'days').format("dddd").toLowerCase()
     
   afterEach ->
     #@room.destroy() - isn't needed since we have the option httpd: false
@@ -40,10 +42,16 @@ describe 'hubot-daily-count-tracker-test', ->
       @room.user.say 'dans', 'hubot get mondays count for ' + key
     
     it 'should respond with monday\'s count for ' + key, ->
-      expect(@room.messages).to.eql [
-        ['dans', 'hubot get mondays count for ' + key]
-        ['hubot', 'mondays count for ' + key + ': 0']
-      ]
+      if @yesterday == "monday"
+        expect(@room.messages).to.eql [
+          ['dans', 'hubot get mondays count for ' + key]
+          ['hubot', 'mondays count for ' + key + ': 5']
+        ]
+      else
+        expect(@room.messages).to.eql [
+          ['dans', 'hubot get mondays count for ' + key]
+          ['hubot', 'mondays count for ' + key + ': 0']
+        ]
   
   context 'user wants to retrieve the highest recorded count for ' + key, ->
     beforeEach ->
