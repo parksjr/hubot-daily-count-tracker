@@ -1,7 +1,7 @@
 # hubot-daily-count-tracker
 [![Codacy Badge](https://api.codacy.com/project/badge/grade/738ab8cadf1b4dc48bdd068b37247a3c)](https://www.codacy.com/app/mike_10/hubot-daily-count-tracker)
 
-A hubot script that does the things
+A hubot script that tracks the daily count of things
 
 See [`src/hubot-daily-count-tracker.coffee`](src/hubot-daily-count-tracker.coffee) for full documentation.
 
